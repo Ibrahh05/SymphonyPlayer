@@ -36,7 +36,13 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
+    // Source - https://stackoverflow.com/a/74891506
+// Posted by Sohaib Ahmed
+// Retrieved 2026-10-20, License - CC BY-SA 4.0
+    implementation("com.google.android.material:material:1.7.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

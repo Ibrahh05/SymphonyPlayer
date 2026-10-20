@@ -19,4 +19,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="243dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="@string/email" />
+
+    <EditText
+        android:id="@+id/editTextTextPasswordAddress"
+        android:layout_width="243dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="@string/email" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
