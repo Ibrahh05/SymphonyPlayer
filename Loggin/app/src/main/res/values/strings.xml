@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Loggin</string>
     <string name="email">Email</string>
+    <string name="inicio_sesion">Iniciar sesión</string>
+    <string name="registro">Registrarse</string>
+    <string name="recup_contrasena">Recuperar contraseña</string>
+    <string name="olvido_contrasena">¿Has olvidado tu contraseña?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
