@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FC7BD6FB"
     tools:context=".fragments.Registro">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/registroTitulo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/registro"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/nombre_usuario"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="113dp"
+        android:ems="10"
+        android:hint="@string/nombre_usuario"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registroTitulo" />
+
+    <EditText
+        android:id="@+id/email_registro"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_usuario" />
+
+    <EditText
+        android:id="@+id/password_registro"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_registro" />
+
+    <EditText
+        android:id="@+id/password_confirmar"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/confirmar_contrasena"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_registro" />
+
+    <Button
+        android:id="@+id/btn_registrarse"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_confirmar" />
+
+    <Button
+        android:id="@+id/btn_volver_registro"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrarse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

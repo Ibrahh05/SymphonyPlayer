@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FC7BD6FB"
+    tools:context=".fragments.RecuperarContrasenaFragment">
+
+    <TextView
+        android:id="@+id/recuperarTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/recup_contrasena"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoExplicativo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="36dp"
+        android:text="Introduce tu correo electrónico y te enviaremos las instrucciones para restablecer tu contraseña."
+        android:textAlignment="center"
+        android:textColor="#444444"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recuperarTitulo" />
+
+    <EditText
+        android:id="@+id/email_recuperar"
+        android:layout_width="243dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoExplicativo" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="243dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/recup_contrasena"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_recuperar" />
+
+    <Button
+        android:id="@+id/btn_volver_recuperar"
+        android:layout_width="243dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/volver"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enviar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

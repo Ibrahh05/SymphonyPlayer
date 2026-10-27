@@ -1,10 +1,13 @@
 <resources>
-    <string name="app_name">Loggin</string>
+    <string name="app_name">SymphonyPlayer</string>
+    <string name="loggin">Inicio de sesión</string>
     <string name="email">Email</string>
     <string name="inicio_sesion">Iniciar sesión</string>
     <string name="registro">Registrarse</string>
     <string name="recup_contrasena">Recuperar contraseña</string>
     <string name="olvido_contrasena">¿Has olvidado tu contraseña?</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="confirmar_contrasena">Repetir contraseña</string>
+    <string name="volver">Volver</string>
 </resources>
