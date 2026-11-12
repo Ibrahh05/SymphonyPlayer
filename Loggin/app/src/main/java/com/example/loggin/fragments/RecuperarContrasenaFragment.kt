@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.loggin.R
 
 class RecuperarContrasenaFragment : Fragment() {
@@ -25,7 +26,7 @@ class RecuperarContrasenaFragment : Fragment() {
 
         // Vuelve a la pantalla anterior del flujo (Login)
         btnVolver.setOnClickListener {
-            parentFragmentManager.popBackStack()
+            view.findNavController().navigateUp()
         }
     }
 }

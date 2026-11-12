@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.loggin.R
 
 class LogginFragment : Fragment() {
@@ -26,17 +27,11 @@ class LogginFragment : Fragment() {
         val tvOlvidoContrasena = view.findViewById<TextView>(R.id.olvido_contrasena)
 
         btnRegistrarse.setOnClickListener {
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainerView, Registro())
-                .addToBackStack(null)
-                .commit()
+            view.findNavController().navigate(R.id.action_logginFragment_to_registroFragment)
         }
 
         tvOlvidoContrasena.setOnClickListener {
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainerView, RecuperarContrasenaFragment())
-                .addToBackStack(null)
-                .commit()
+            view.findNavController().navigate(R.id.action_logginFragment_to_recuperarContrasenaFragment)
         }
     }
 }
