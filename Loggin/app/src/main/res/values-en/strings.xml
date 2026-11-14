@@ -14,4 +14,6 @@
     <string name="short_pass_err">The password has to have at least 6 characters</string>
     <string name="invalid_credentials_err">Invalid credentials</string>
     <string name="invalid_email_err">The email is not valid</string>
+    <string name="error_passwords_no_coinciden">Passwords do not match</string>
+    <string name="registro_exitoso">Registration successful</string>
 </resources>
