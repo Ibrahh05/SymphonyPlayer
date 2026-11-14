@@ -5,8 +5,8 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FC7BD6FB"
-    tools:context=".fragments.Registro">
+    android:background="#FCEAF5FB"
+    tools:context=".fragments.RegistroFragment">
 
     <TextView
         android:id="@+id/registroTitulo"

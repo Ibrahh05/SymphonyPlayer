@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FC7BD6FB"
+    android:background="#FCEAF5FB"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.BlankFragment">
+    tools:context=".fragments.LogginFragment">
 
 
     <ImageView
@@ -18,71 +18,84 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="243dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="212dp"
-        android:ems="10"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
         android:hint="@string/email"
-        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/inicio_sesion_titulo">
 
-    <EditText
-        android:id="@+id/editTextTextPasswordAddress"
-        android:layout_width="243dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="31dp"
-        android:ems="10"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
         android:hint="@string/contrasena"
-        android:inputType="textPassword"
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPasswordAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="80dp"
         android:text="@string/inicio_sesion"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/LayoutPassword" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="80dp"
         android:text="@string/registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/LayoutPassword" />
 
     <TextView
         android:id="@+id/olvido_contrasena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="190dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/olvido_contrasena"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/inicio_sesion_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="170dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/loggin"

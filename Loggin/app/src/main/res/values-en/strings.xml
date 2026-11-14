@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SymphonyPlayer</string>
+    <string name="loggin">Login</string>
+    <string name="email">Email</string>
+    <string name="inicio_sesion">Sign in</string>
+    <string name="registro">Sign up</string>
+    <string name="recup_contrasena">Recover password</string>
+    <string name="olvido_contrasena">Forgot your password?</string>
+    <string name="nombre_usuario">Username</string>
+    <string name="contrasena">Password</string>
+    <string name="confirmar_contrasena">Repeat password</string>
+    <string name="volver">Go back</string>
+    <string name="home">Home</string>
+    <string name="short_pass_err">The password has to have at least 6 characters</string>
+    <string name="invalid_credentials_err">Invalid credentials</string>
+    <string name="invalid_email_err">The email is not valid</string>
+</resources>

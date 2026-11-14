@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.loggin.R
 
-class Registro : Fragment() {
+class RegistroFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

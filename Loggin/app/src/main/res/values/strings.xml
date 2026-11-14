@@ -10,4 +10,8 @@
     <string name="contrasena">Contraseña</string>
     <string name="confirmar_contrasena">Repetir contraseña</string>
     <string name="volver">Volver</string>
+    <string name="home">Casa</string>
+    <string name="short_pass_err">La contraseña tiene que tener minimo 6 caracteres</string>
+    <string name="invalid_credentials_err">Credenciales inválidas</string>
+    <string name="invalid_email_err">El email no es válido</string>
 </resources>
